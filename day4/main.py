@@ -16,7 +16,7 @@ def part2(lines):
     pass
 
 def main():
-    lines = read_file("day1/input.txt")
+    lines = read_file("day4/input.txt")
     part1(lines)
     # part2(lines)
 
