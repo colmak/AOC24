@@ -44,7 +44,7 @@ def part1(lines):
             break
         check_sum += i * int(char)
 
-    print(f"Checksum: {check_sum}")
+    print(check_sum)
 
 def part2(lines):
     file_blocks, free_spaces, position = [], [], 0
@@ -65,7 +65,7 @@ def part2(lines):
                 del free_space[:len(file_block)]
 
     checksum = sum(i * j for i, block in enumerate(file_blocks) for j in block)
-    print(f"Checksum Part 2: {checksum}")
+    print(checksum)
 
 def main():
     lines = read_file("day9/input.txt")
